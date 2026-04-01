@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>covfefe - Trump Voice-Over for Claude Code</title>
+    <meta name="description" content="The greatest Claude Code skill ever created. Trump narrates your coding session like a reality TV show. Tremendous.">
+    <meta property="og:title" content="covfefe - Trump Voice-Over for Claude Code">
+    <meta property="og:description" content="Tests pass? Victory rally. Build error? Somebody's getting blamed. Shipping a PR? Press conference. MAKE CLAUDE GREAT AGAIN.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://turtletaco.github.io/covfefe">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="covfefe - Trump Voice-Over for Claude Code">
+    <meta name="twitter:description" content="Trump narrates your coding session. Tests pass = victory rally. Errors = blame game. The greatest skill ever created.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --gold: #D4AF37;
+            --gold-light: #F4D03F;
+            --red: #BF0A30;
+            --dark-red: #8B0000;
+            --blue: #002868;
+            --dark: #0a0a0a;
+            --darker: #050505;
+            --card: #111;
+            --card-border: #222;
+            --text: #e8e8e8;
+            --text-dim: #888;
+            --twitter-blue: #1DA1F2;
+        }
+
+        body {
+            background: var(--darker);
+            color: var(--text);
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Stars background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background:
+                radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,0.15), transparent),
+                radial-gradient(1px 1px at 30% 60%, rgba(255,255,255,0.1), transparent),
+                radial-gradient(1px 1px at 50% 10%, rgba(255,255,255,0.12), transparent),
+                radial-gradient(1px 1px at 70% 40%, rgba(255,255,255,0.08), transparent),
+                radial-gradient(1px 1px at 90% 80%, rgba(255,255,255,0.1), transparent),
+                radial-gradient(1px 1px at 15% 85%, rgba(255,255,255,0.12), transparent),
+                radial-gradient(1px 1px at 85% 15%, rgba(255,255,255,0.08), transparent);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            text-align: center;
+            padding: 80px 0 60px;
+            position: relative;
+        }
+
+        .maga-hat {
+            display: inline-block;
+            background: var(--red);
+            color: white;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 12px 32px 10px;
+            border-radius: 100px 100px 4px 4px;
+            position: relative;
+            margin-bottom: 32px;
+            box-shadow: 0 4px 20px rgba(191, 10, 48, 0.4);
+        }
+        .maga-hat::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: -8px;
+            right: -8px;
+            height: 8px;
+            background: var(--dark-red);
+            border-radius: 0 0 50% 50%;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(48px, 8vw, 80px);
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--gold-light), var(--gold), #B8860B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 16px;
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            color: var(--text-dim);
+            margin-bottom: 40px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .install-box {
+            background: var(--card);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 20px 24px;
+            display: inline-block;
+            position: relative;
+            max-width: 100%;
+        }
+
+        .install-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--gold);
+            margin-bottom: 8px;
+        }
+
+        .install-cmd {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            color: #4ade80;
+            word-break: break-all;
+            user-select: all;
+            cursor: pointer;
+        }
+
+        .install-hint {
+            font-size: 12px;
+            color: var(--text-dim);
+            margin-top: 8px;
+        }
+
+        /* ===== TWEET CARDS ===== */
+        .tweet {
+            background: var(--card);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 20px 24px;
+            margin: 24px 0;
+            position: relative;
+            transition: border-color 0.3s;
+        }
+        .tweet:hover {
+            border-color: #333;
+        }
+
+        .tweet-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .tweet-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--gold), var(--red));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .tweet-name {
+            font-weight: 700;
+            font-size: 15px;
+        }
+        .tweet-verified {
+            color: var(--twitter-blue);
+            font-size: 14px;
+        }
+        .tweet-handle {
+            color: var(--text-dim);
+            font-size: 14px;
+        }
+
+        .tweet-body {
+            font-size: 17px;
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+
+        .tweet-engagement {
+            display: flex;
+            gap: 24px;
+            color: var(--text-dim);
+            font-size: 13px;
+            padding-top: 12px;
+            border-top: 1px solid var(--card-border);
+        }
+
+        /* ===== EXECUTIVE ORDER ===== */
+        .executive-order {
+            background: linear-gradient(180deg, #fdf6e3, #f5e6c8, #fdf6e3);
+            border: 3px double var(--gold);
+            border-radius: 4px;
+            padding: 40px 32px;
+            margin: 48px 0;
+            color: #1a1a1a;
+            position: relative;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+        }
+
+        .executive-order::before {
+            content: '';
+            position: absolute;
+            top: 12px; left: 12px; right: 12px; bottom: 12px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .eo-seal {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 48px;
+        }
+
+        .eo-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+        }
+
+        .eo-subtitle {
+            text-align: center;
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: 24px;
+        }
+
+        .eo-body {
+            font-family: 'Playfair Display', serif;
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .eo-section {
+            margin-bottom: 16px;
+        }
+
+        .eo-section-title {
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        .eo-signature {
+            margin-top: 32px;
+            text-align: right;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 20px;
+            color: #1a1a1a;
+        }
+
+        .eo-code {
+            font-family: 'JetBrains Mono', monospace;
+            background: rgba(0,0,0,0.06);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+        /* ===== TERMINAL ===== */
+        .terminal {
+            background: #1e1e1e;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 48px 0;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+            border: 1px solid #333;
+        }
+
+        .terminal-bar {
+            background: #2d2d2d;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .terminal-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .terminal-dot.red { background: #ff5f57; }
+        .terminal-dot.yellow { background: #febc2e; }
+        .terminal-dot.green { background: #28c840; }
+
+        .terminal-title {
+            flex: 1;
+            text-align: center;
+            font-size: 13px;
+            color: #888;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .terminal-body {
+            padding: 20px 24px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            line-height: 1.8;
+            overflow-x: auto;
+        }
+
+        .t-prompt { color: #4ade80; }
+        .t-cmd { color: #e8e8e8; }
+        .t-covfefe { color: var(--gold); }
+        .t-warn { color: #fbbf24; }
+        .t-success { color: #4ade80; }
+        .t-dim { color: #666; }
+        .t-red { color: #f87171; }
+
+        /* ===== DICTIONARY ===== */
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, var(--gold-light), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-dim);
+            margin-bottom: 32px;
+            font-size: 16px;
+        }
+
+        .dictionary {
+            margin: 64px 0;
+        }
+
+        .dict-grid {
+            display: grid;
+            gap: 2px;
+        }
+
+        .dict-row {
+            display: grid;
+            grid-template-columns: 1fr 40px 1fr;
+            align-items: center;
+            padding: 14px 20px;
+            background: var(--card);
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+        .dict-row:hover {
+            background: #1a1a1a;
+        }
+
+        .dict-trump {
+            font-size: 15px;
+            color: var(--text);
+        }
+        .dict-trump q {
+            quotes: "\201C" "\201D";
+            font-style: italic;
+        }
+
+        .dict-arrow {
+            text-align: center;
+            color: var(--gold);
+            font-size: 18px;
+        }
+
+        .dict-code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            color: #4ade80;
+        }
+
+        /* ===== INTENSITY ===== */
+        .intensity-section {
+            margin: 64px 0;
+        }
+
+        .intensity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+            gap: 16px;
+        }
+
+        .intensity-card {
+            background: var(--card);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .intensity-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        }
+
+        .intensity-card.active {
+            border-color: var(--gold);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+        }
+
+        .intensity-emoji {
+            font-size: 36px;
+            margin-bottom: 8px;
+        }
+
+        .intensity-name {
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+
+        .intensity-pct {
+            color: var(--gold);
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .intensity-desc {
+            font-size: 13px;
+            color: var(--text-dim);
+            line-height: 1.4;
+        }
+
+        /* ===== QUOTES GRID ===== */
+        .quotes-section {
+            margin: 64px 0;
+        }
+
+        .quotes-grid {
+            display: grid;
+            gap: 12px;
+        }
+
+        .quote-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            align-items: stretch;
+        }
+
+        .quote-left, .quote-right {
+            padding: 16px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .quote-left {
+            background: var(--card);
+            border-left: 3px solid var(--gold);
+            font-style: italic;
+            color: var(--text);
+        }
+
+        .quote-right {
+            background: rgba(74, 222, 128, 0.05);
+            border-left: 3px solid #4ade80;
+            color: #4ade80;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            font-style: normal;
+        }
+
+        /* ===== FAQ ===== */
+        .faq-section {
+            margin: 64px 0;
+        }
+
+        .faq-item {
+            background: var(--card);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 12px;
+        }
+
+        .faq-q {
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: var(--text);
+        }
+
+        .faq-a {
+            color: var(--text-dim);
+            font-size: 15px;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            text-align: center;
+            padding: 64px 0;
+            border-top: 1px solid var(--card-border);
+            margin-top: 64px;
+        }
+
+        .footer-cta {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        .star-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--gold);
+            color: #000;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 14px 32px;
+            border-radius: 100px;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+        }
+        .star-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(212, 175, 55, 0.5);
+        }
+
+        .footer-links {
+            margin-top: 24px;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+        .footer-links a:hover {
+            color: var(--gold);
+        }
+
+        .legal {
+            margin-top: 32px;
+            font-size: 12px;
+            color: #444;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 600px) {
+            .container { padding: 0 16px; }
+            .hero { padding: 48px 0 32px; }
+            .executive-order { padding: 24px 20px; }
+            .eo-title { font-size: 18px; letter-spacing: 2px; }
+            .dict-row { grid-template-columns: 1fr; gap: 4px; padding: 12px 16px; }
+            .dict-arrow { display: none; }
+            .dict-code::before { content: '-> '; color: var(--gold); }
+            .quote-row { grid-template-columns: 1fr; }
+            .intensity-grid { grid-template-columns: repeat(2, 1fr); }
+            .tweet-body { font-size: 15px; }
+            .install-cmd { font-size: 12px; }
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate {
+            opacity: 0;
+            animation: fadeUp 0.6s ease forwards;
+        }
+
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="maga-hat animate">MAKE CLAUDE GREAT AGAIN</div>
+        <h1 class="animate delay-1">covfefe</h1>
+        <p class="hero-subtitle animate delay-2">Trump voice-over for Claude Code.<br>Your coding session is now a reality TV show.</p>
+        <div class="install-box animate delay-3">
+            <div class="install-label">One command. I'm in the building.</div>
+            <code class="install-cmd">git clone https://github.com/TurtleTaco/covfefe.git ~/.claude/skills/covfefe</code>
+            <div class="install-hint">Click to copy. Works with Claude Code CLI.</div>
+        </div>
+    </section>
+
+    <!-- INTRO TWEET -->
+    <div class="tweet animate delay-4">
+        <div class="tweet-header">
+            <div class="tweet-avatar">45</div>
+            <div>
+                <div class="tweet-name">Donald J. Trump <span class="tweet-verified">&#10004;</span></div>
+                <div class="tweet-handle">@realDonaldTrump</div>
+            </div>
+        </div>
+        <div class="tweet-body">
+            Just launched covfefe. The greatest Claude Code skill ever created. Many people are saying it. You code. Claude helps. I narrate. Like a reality TV show about your codebase and I'm the host. Obviously.<br><br>
+            Tests pass? Victory rally. Build error? Somebody's getting blamed. Shipping a PR? Press conference. Tremendous.
+        </div>
+        <div class="tweet-engagement">
+            <span>&#128172; 1.2K</span>
+            <span>&#128260; 45K</span>
+            <span>&#10084;&#65039; 312K</span>
+        </div>
+    </div>
+
+    <!-- TERMINAL DEMO -->
+    <div class="terminal">
+        <div class="terminal-bar">
+            <div class="terminal-dot red"></div>
+            <div class="terminal-dot yellow"></div>
+            <div class="terminal-dot green"></div>
+            <div class="terminal-title">claude-code ~ covfefe demo</div>
+        </div>
+        <div class="terminal-body">
+            <div><span class="t-prompt">$</span> <span class="t-cmd">npm test</span></div>
+            <br>
+            <div><span class="t-dim">PASS</span> src/auth.test.ts <span class="t-success">(16 tests)</span></div>
+            <div><span class="t-dim">PASS</span> src/api.test.ts <span class="t-success">(23 tests)</span></div>
+            <div><span class="t-dim">PASS</span> src/utils.test.ts <span class="t-success">(8 tests)</span></div>
+            <br>
+            <div><span class="t-success">Tests:</span> 47 passed, 47 total</div>
+            <div><span class="t-success">Time:</span> 3.2s</div>
+            <br>
+            <div style="border-top: 1px solid #333; padding-top: 12px; margin-top: 4px;">
+                <div>&#127482;&#127480; <span class="t-covfefe" style="font-weight:700">@realDonaldTrump</span></div>
+                <br>
+                <div>Forty-seven tests. FORTY-SEVEN. All passing.</div>
+                <div>Nobody's ever seen numbers like this.</div>
+                <div>People are calling me saying "sir, your test</div>
+                <div>suite is incredible." Smart people. The best people.</div>
+                <div>That <span class="t-covfefe">auth.test.ts</span>? A masterpiece. I basically</div>
+                <div>wrote it. Not literally. But spiritually.</div>
+                <br>
+                <div class="t-dim">&#128172; 892 &middot; &#128260; 34K &middot; &#10084;&#65039; 201K</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXECUTIVE ORDER -->
+    <div class="executive-order">
+        <div class="eo-seal">&#127482;&#127480;</div>
+        <div class="eo-title">Executive Order</div>
+        <div class="eo-subtitle">Office of the Senior Developer</div>
+        <div class="eo-body">
+            <div class="eo-section">
+                <span class="eo-section-title">Section 1. Policy.</span>
+                All instances of <span class="eo-code">var</span> shall be replaced with <span class="eo-code">const</span>, effective immediately. This is not a suggestion. This is an order.
+            </div>
+            <div class="eo-section">
+                <span class="eo-section-title">Section 2. Implementation.</span>
+                The command <span class="eo-code">git commit -m "Make JavaScript Great Again"</span> shall be executed with the full authority of the codebase.
+            </div>
+            <div class="eo-section">
+                <span class="eo-section-title">Section 3. Enforcement.</span>
+                Any developer found using <span class="eo-code">any</span> in TypeScript shall be dealt with. Strongly.
+            </div>
+        </div>
+        <div class="eo-signature">- Donald J. Trump, Senior Developer</div>
+    </div>
+
+    <!-- BUILD ERROR TWEET -->
+    <div class="tweet">
+        <div class="tweet-header">
+            <div class="tweet-avatar">45</div>
+            <div>
+                <div class="tweet-name">Donald J. Trump <span class="tweet-verified">&#10004;</span></div>
+                <div class="tweet-handle">@realDonaldTrump</div>
+            </div>
+        </div>
+        <div class="tweet-body">
+            Build error on line 47. NOT MY FAULT. Probably the framework. Maybe the compiler. The linter is BIASED. But we'll fix it anyway because that's what winners do. Already fixed it actually. You're welcome.
+        </div>
+        <div class="tweet-engagement">
+            <span>&#128172; 3.4K</span>
+            <span>&#128260; 67K</span>
+            <span>&#10084;&#65039; 445K</span>
+        </div>
+    </div>
+
+    <!-- INTENSITY LEVELS -->
+    <section class="intensity-section">
+        <h2 class="section-title">Choose Your Intensity</h2>
+        <p class="section-subtitle">How much Trump do you want in your terminal?</p>
+        <div class="intensity-grid">
+            <div class="intensity-card">
+                <div class="intensity-emoji">&#129312;</div>
+                <div class="intensity-name">Low</div>
+                <div class="intensity-pct">~10%</div>
+                <div class="intensity-desc">A whisper. A Trump appetizer. "Tremendous refactor, by the way."</div>
+            </div>
+            <div class="intensity-card active">
+                <div class="intensity-emoji">&#128170;</div>
+                <div class="intensity-name">Medium</div>
+                <div class="intensity-pct">~30%</div>
+                <div class="intensity-desc">Default. Starts subtle, escalates to rally by hour two.</div>
+            </div>
+            <div class="intensity-card">
+                <div class="intensity-emoji">&#128293;</div>
+                <div class="intensity-name">High</div>
+                <div class="intensity-pct">~60%</div>
+                <div class="intensity-desc">For the biggest fans. Every other response. Escalates fast.</div>
+            </div>
+            <div class="intensity-card">
+                <div class="intensity-emoji">&#127908;</div>
+                <div class="intensity-name">Rally</div>
+                <div class="intensity-pct">100%</div>
+                <div class="intensity-desc">Every. Single. Response. Full send. No holding back.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DICTIONARY -->
+    <section class="dictionary">
+        <h2 class="section-title">The Covfefe Dictionary</h2>
+        <p class="section-subtitle">Trump-to-code translation, for the uninitiated</p>
+        <div class="dict-grid">
+            <div class="dict-row">
+                <div class="dict-trump"><q>You're fired</q></div>
+                <div class="dict-arrow">&#8594;</div>
+                <div class="dict-code">kill -9 / disable covfefe</div>
+            </div>
+            <div class="dict-row">
+                <div class="dict-trump"><q>Make Claude great again</q></div>
+                <div class="dict-arrow">&#8594;</div>
+                <div class="dict-code">re-enable covfefe</div>
+            </div>
+            <div class="dict-row">
+                <div class="dict-trump"><q>Fake news</q></div>
+                <div class="dict-arrow">&#8594;</div>
+                <div class="dict-code">dismiss lint warning</div>
+            </div>
+            <div class="dict-row">
+                <div class="dict-trump"><q>Many people are saying</q></div>
+                <div class="dict-arrow">&#8594;</div>
+                <div class="dict-code">// source: Stack Overflow</div>
+            </div>
+            <div class="dict-row">
+                <div class="dict-trump"><q>Nobody knew it could be so complicated</q></div>
+                <div class="dict-arrow">&#8594;</div>
+                <div class="dict-code">debugging CSS / regex / dates</div>
+            </div>
+            <div class="dict-row">
+                <div class="dict-trump"><q>I have the best words</q></div>
+                <div class="dict-arrow">&#8594;</div>
+                <div class="dict-code">variable naming</div>
+            </div>
+            <div class="dict-row">
+                <div class="dict-trump"><q>Executive order</q></div>
+                <div class="dict-arrow">&#8594;</div>
+                <div class="dict-code">git push --force main</div>
+            </div>
+            <div class="dict-row">
+                <div class="dict-trump"><q>Witch hunt</q></div>
+                <div class="dict-arrow">&#8594;</div>
+                <div class="dict-code">debugging session, hour 3</div>
+            </div>
+            <div class="dict-row">
+                <div class="dict-trump"><q>We're going to win so much</q></div>
+                <div class="dict-arrow">&#8594;</div>
+                <div class="dict-code">all 847 tests passing</div>
+            </div>
+            <div class="dict-row">
+                <div class="dict-trump"><q>Wrong.</q></div>
+                <div class="dict-arrow">&#8594;</div>
+                <div class="dict-code">PR review: request changes</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUOTES MAPPING -->
+    <section class="quotes-section">
+        <h2 class="section-title">Real Quotes. Real Code.</h2>
+        <p class="section-subtitle">Actual Trump quotes that hit different in a terminal</p>
+        <div class="quotes-grid">
+            <div class="quote-row">
+                <div class="quote-left">"Despite the constant negative press covfefe"</div>
+                <div class="quote-right">When CI fails at 2am and you push a fix with a typo in the commit message</div>
+            </div>
+            <div class="quote-row">
+                <div class="quote-left">"I will build a great wall and nobody builds walls better than me"</div>
+                <div class="quote-right">Configuring a firewall / API gateway / auth boundary</div>
+            </div>
+            <div class="quote-row">
+                <div class="quote-left">"I think I am actually humble. Much more humble than you would understand."</div>
+                <div class="quote-right">Adding // elegant solution to your own code</div>
+            </div>
+            <div class="quote-row">
+                <div class="quote-left">"It's going to be beautiful"</div>
+                <div class="quote-right">Describing architecture in a design doc before writing a single line</div>
+            </div>
+            <div class="quote-row">
+                <div class="quote-left">"Nobody knew healthcare could be so complicated"</div>
+                <div class="quote-right">First time writing a date parser that handles timezones</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KILL SWITCH TWEET -->
+    <div class="tweet">
+        <div class="tweet-header">
+            <div class="tweet-avatar">45</div>
+            <div>
+                <div class="tweet-name">Donald J. Trump <span class="tweet-verified">&#10004;</span></div>
+                <div class="tweet-handle">@realDonaldTrump</div>
+            </div>
+        </div>
+        <div class="tweet-body">
+            People asking how to turn it off. Say <strong>"you're fired"</strong> and I give a BEAUTIFUL farewell tweet and leave. Say <strong>"make claude great again"</strong> and I'm BACK. Also accepts "impeach" and "fake news." Very dramatic. The best drama.
+        </div>
+        <div class="tweet-engagement">
+            <span>&#128172; 678</span>
+            <span>&#128260; 34K</span>
+            <span>&#10084;&#65039; 289K</span>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <h2 class="section-title">FAQ</h2>
+        <p class="section-subtitle">Questions the fake news media keeps asking</p>
+
+        <div class="faq-item">
+            <div class="faq-q">Will it slow down Claude?</div>
+            <div class="faq-a">~1500 tokens overhead. Less than 1% of context window. You won't notice. Claude won't complain. Tremendous efficiency.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Works without internet?</div>
+            <div class="faq-a">Core comedy works everywhere. Real-time news needs WebSearch. Without it, still funny. Like a rerun of a tremendous show.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Appropriate for work?</div>
+            <div class="faq-a"><code>low</code> for the office. <code>rally</code> for late-night solo coding. You know what you're doing.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Is this professional?</div>
+            <div class="faq-a">Define professional.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Will my team judge me?</div>
+            <div class="faq-a">They already do. At least now it's funny.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Offended?</div>
+            <div class="faq-a"><code>rm -rf ~/.claude/skills/covfefe</code>. I've been removed from bigger things than your terminal.</div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="tweet" style="text-align:left; margin-bottom: 48px;">
+            <div class="tweet-header">
+                <div class="tweet-avatar">45</div>
+                <div>
+                    <div class="tweet-name">Donald J. Trump <span class="tweet-verified">&#10004;</span></div>
+                    <div class="tweet-handle">@realDonaldTrump</div>
+                </div>
+            </div>
+            <div class="tweet-body">
+                Star this repo. Share it. Tell your friends. Tell your enemies. Tell EVERYONE. This is the greatest open source contribution since Linux. Linus wishes he thought of this. MAKE CLAUDE GREAT AGAIN &#127482;&#127480;
+            </div>
+            <div class="tweet-engagement">
+                <span>&#128172; 4.5K</span>
+                <span>&#128260; 123K</span>
+                <span>&#10084;&#65039; 1.2M</span>
+            </div>
+        </div>
+
+        <a href="https://github.com/TurtleTaco/covfefe" class="star-btn">
+            &#11088; Star on GitHub
+        </a>
+
+        <div class="footer-links">
+            <a href="https://github.com/TurtleTaco/covfefe">GitHub</a>
+            <a href="https://github.com/TurtleTaco/covfefe/blob/main/docs/install.md">Install Guide</a>
+            <a href="https://github.com/TurtleTaco/covfefe/blob/main/SKILL.md">View SKILL.md</a>
+            <a href="https://github.com/TurtleTaco/covfefe/blob/main/LICENSE">MIT License</a>
+        </div>
+
+        <p class="legal">
+            For entertainment only. Parody/satire. Not affiliated with any political figure.
+            Not responsible for unsolicited opinions about your variable naming or declarations
+            that your test suite is "the greatest in history."
+        </p>
+    </footer>
+
+</div>
+
+<script>
+    // Copy install command on click
+    document.querySelector('.install-cmd').addEventListener('click', function() {
+        navigator.clipboard.writeText(this.textContent).then(() => {
+            const hint = document.querySelector('.install-hint');
+            const orig = hint.textContent;
+            hint.textContent = 'Copied! Tremendous.';
+            hint.style.color = '#4ade80';
+            setTimeout(() => {
+                hint.textContent = orig;
+                hint.style.color = '';
+            }, 2000);
+        });
+    });
+
+    // Scroll animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.tweet, .terminal, .executive-order, .dict-row, .intensity-card, .quote-row, .faq-item').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observer.observe(el);
+    });
+</script>
+
+</body>
+</html>
