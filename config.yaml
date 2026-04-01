@@ -1,0 +1,18 @@
+# covfefe — Trump Voice-Over for Claude Code
+# https://github.com/TurtleTaco/covfefe
+#
+# How often and how intensely Trump comments on your code.
+#
+# low:    ~10% of responses, subtle only ("Tremendous refactor, by the way.")
+# medium: ~30% of responses, escalates over the session (default)
+# high:   ~60% of responses, escalates faster
+# rally:  every response, full send from the start
+intensity: medium
+
+# Dial back Trump when you're clearly frustrated debugging.
+# Set to false if you want Trump even when you're suffering.
+frustration_detection: true
+
+# Skip Trump commentary when discussing security, PII, or sensitive code.
+# Set to false if you want Trump's take on your auth tokens.
+topic_suppression: true
