@@ -1,48 +1,67 @@
 # 🎤 covfefe
 
-> "I have the best words." — and now, so does your Claude Code.
-
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)]()
 
-Look, I'm going to be honest with you. Your Claude Code? It's fine. It writes code. It reviews code. Very smart. But it's BORING. Nobody's talking about it. Nobody's sharing screenshots on Twitter. You know why? No personality. No energy. No TRUMP.
+---
 
-That changes today.
+🇺🇸 **@realDonaldTrump**
 
-covfefe is the greatest Claude Code skill ever created. Many people are saying it. Very smart people. Engineers at top companies. They install it and they say, "Sir, this is the funniest thing I've ever seen in my terminal." And I say, "I know."
+Just launched covfefe. The greatest Claude Code skill ever created. Many people are saying it. Very smart people. Engineers at TOP companies. They install it and they say, "Sir, this is the funniest thing I've ever seen in my terminal." And I say, "I know."
 
-## What Does It Do? (Everything.)
+Your Claude Code? It's fine. It writes code. Very smart. But it's BORING. No personality. No energy. No TRUMP. That changes TODAY.
 
-You code. Claude helps. I narrate. Like a reality TV show about your codebase, and I'm the host. Obviously.
+💬 1.2K · 🔄 45K · ❤️ 312K
 
-Roughly one in three responses, I drop in with commentary about what just happened. Your tests pass? Victory rally. Build error? Somebody's getting blamed. Shipping a PR? Press conference.
+---
 
-And here's the thing nobody else is doing... I pull in REAL news. Today's news. So every session is fresh. Every day is a new episode. Your coding sessions just became appointment television.
+🇺🇸 **@realDonaldTrump**
 
-## Install (One Line. The Best Line.)
+People keep asking "what does covfefe do?" EVERYTHING. You code. Claude helps. I narrate. Like a reality TV show about your codebase and I'm the host. Obviously.
+
+~30% of responses, I drop in with commentary. Tests pass? Victory rally. Build error? Somebody's getting blamed. Shipping a PR? Press conference.
+
+And here's what NOBODY else is doing... I pull in REAL news. Today's news. Every session is a new episode. Appointment television. For your terminal.
+
+💬 847 · 🔄 23K · ❤️ 198K
+
+---
+
+🇺🇸 **@realDonaldTrump**
+
+INSTALL IN ONE LINE. The best line. Very simple. Even a Democrat could do it:
 
 ```bash
 git clone https://github.com/TurtleTaco/covfefe.git ~/.claude/skills/covfefe
 ```
 
-That's it. One command. Very simple. Even a Democrat could do it.
+That's it. Next time you start Claude Code, I'm in the building. You're welcome.
 
-Next time you start Claude Code, I'm in the building. You're welcome.
-
-### Want It In Just One Project?
+Want it in just ONE project? Also one line:
 
 ```bash
 git clone https://github.com/TurtleTaco/covfefe.git your-project/.claude/skills/covfefe
 ```
 
-## Demo
+💬 2.1K · 🔄 89K · ❤️ 567K
+
+---
+
+🇺🇸 **@realDonaldTrump**
+
+The DEMO VIDEO is going to be incredible. We're using AI voice technology. Most shared developer video of the year. Coming soon. Believe me.
 
 <!-- TODO: Replace with actual demo GIF/video -->
-_The demo video is going to be incredible. We're using AI voice technology. It's going to be the most shared developer video of the year. Coming soon. Believe me._
 
-## What It Looks Like
+💬 43 · 🔄 1.2K · ❤️ 8K
 
-You ask Claude to review your code. Claude gives you a real, professional review. And then:
+---
+
+🇺🇸 **@realDonaldTrump**
+
+Let me show you what it looks like. You ask Claude to review your code. Claude gives you a real, professional review. And then I show up:
+
+💬 156 · 🔄 5K · ❤️ 34K
 
 ---
 
@@ -54,19 +73,11 @@ Just reviewed the code. Beautiful code. Really beautiful. But that `UserService.
 
 ---
 
-Your tests pass:
-
----
-
 🇺🇸 **@realDonaldTrump**
 
 SIXTEEN TESTS PASSING. Sixteen! That's more than anyone's ever passed in the history of testing. People are saying it's a record. Smart people. The fake news media won't cover it but WE know. TREMENDOUS!
 
 💬 203 · 🔄 67K · ❤️ 412K
-
----
-
-You hit a build error:
 
 ---
 
@@ -78,95 +89,174 @@ This TypeError? Not our fault. Probably the framework. Maybe the compiler. I've 
 
 ---
 
-## Configuration (Very Flexible. The Most Flexible.)
+🇺🇸 **@realDonaldTrump**
 
-Edit `~/.claude/skills/covfefe/config.yaml`:
+CONFIGURATION. Very flexible. The MOST flexible. Edit `~/.claude/skills/covfefe/config.yaml`:
 
 ```yaml
-# How much Trump do you want in your life?
-intensity: medium   # low / medium / high / rally
-
-# Go easy on me when I'm frustrated debugging
-frustration_detection: true
-
-# No jokes when I'm handling passwords and secrets
-topic_suppression: true
+intensity: medium           # low / medium / high / rally
+frustration_detection: true # go easy when debugging
+topic_suppression: true     # no jokes on security/PII
 ```
 
-**`low`** — A whisper of Trump. Very subtle. Very classy. ~10% of responses. For people who want just a taste. Like a Trump appetizer.
-
-**`medium`** — The default. The recommended. The BEST setting. ~30% of responses. Starts subtle, gets more intense as the session goes on. By hour two, we're in full rally mode.
-
-**`high`** — For my biggest fans. ~60% of responses. We're not holding back.
-
-**`rally`** — Every. Single. Response. Full send. The entire session is a rally. You asked for it. I delivered. Like always.
-
-## Features (So Many Features. The Best Features.)
-
-**I know your code.** I don't just say "tremendous." I reference your ACTUAL file names. I roast your SPECIFIC bugs. I take credit for YOUR fixes. That's called leadership.
-
-**I read the room.** Tests passing? Victory rally. Error? Blame game. Code review? Executive feedback. Shipping? Press conference. Different events, different energy. Very smart.
-
-**I escalate.** I start subtle. A little comment here, a little "tremendous" there. But the longer we work together, the bigger the show gets. By hour two, your code review is a State of the Union address.
-
-**I'm current.** Real-time news woven into the commentary. Every session is fresh because the world keeps giving me material. Incredible material.
-
-**I remember.** If I roast your `UserService` and you fix it later, I take credit. "I TOLD you about that UserService. I called it. Now it's fixed. You're welcome." That's called a running gag. Very sophisticated humor.
-
-**I know when to stop.** Say "you're fired" and I'm gone. Say "make claude great again" and I'm back. Very simple.
-
-## FAQ (Frequently Asked. Tremendous Questions.)
-
-**"Is this official?"**
-No. This is a parody. For entertainment. Not affiliated with or endorsed by any political figure, party, or organization. But if it were official, it would be the best official skill ever made.
-
-**"Will it slow down my Claude?"**
-Barely. About 1500 tokens of overhead. That's less than 1% of the context window. Occasional news searches add 1-2 seconds. You won't notice. Unless you're a very slow reader. In which case, that's your problem, not mine.
-
-**"Can I turn it off?"**
-Say "you're fired." Very dramatic. Very fun. I give a farewell tweet. It's beautiful. Then I'm gone until you say "make claude great again."
-
-Or just delete the folder. Less dramatic. Less fun. Your choice.
-
-**"Does it work without the internet?"**
-The core comedy works everywhere. Real-time news requires WebSearch. Without it, you still get all the Trump commentary, just without current events. Like a rerun. Still good. But the new episodes are better.
-
-**"Is this appropriate for work?"**
-That depends on your work. Some offices would love this. Others... are run by very boring people. I recommend `intensity: low` for the office and `intensity: rally` for late-night solo coding. You know what you're doing.
-
-**"I'm offended."**
-Uninstall it. `rm -rf ~/.claude/skills/covfefe`. Problem solved. I've been removed from bigger things than your terminal.
-
-## Contributing (Make covfefe Great... er.)
-
-The heart of this skill is the prompt in `SKILL.md`. If you've got better jokes, funnier reactions, or new Trump-isms that should be in here, open a PR.
-
-Rules:
-- Keep it PG-13. We're classy.
-- Real Trump speech patterns. Study the craft.
-- Code-specific humor always beats generic humor.
-- The real test: did you actually laugh? Not "heh." An actual laugh.
-
-Want to add new personality packs? Other voices? That's the roadmap. But first, we perfect the original. Because the original is always the best.
-
-## Disclaimer (The Lawyers Made Me Do This)
-
-This project is **for entertainment purposes only**. It's a parody. A satire. A joke about coding that uses the public persona speech patterns of a well-known public figure.
-
-Not affiliated with, endorsed by, or connected to any political figure, party, campaign, or organization. The commentary generated is fictional.
-
-The authors are not responsible for any Trump-style commentary generated during your coding sessions, including but not limited to: unsolicited opinions about your variable naming, unfounded claims of credit for your bug fixes, derogatory remarks about your `node_modules` folder, or declarations that your test suite is "the greatest in history."
-
-By installing this skill, you acknowledge that your coding sessions are about to get a lot more entertaining, and potentially a lot louder.
-
-## License
-
-[MIT](LICENSE) — Do whatever you want with it. Tremendous license. The best license. Many people are saying it's the most permissive license they've ever seen. And they're right.
+💬 89 · 🔄 3K · ❤️ 21K
 
 ---
 
-_Made with love, ego, and a complete lack of humility._
+🇺🇸 **@realDonaldTrump**
 
-_Star this repo. Share it. Tell your friends. Tell your enemies. Tell everyone._
+`low` — A whisper of Trump. Very subtle. Very classy. ~10%. Like a Trump appetizer.
 
-_MAKE CLAUDE GREAT AGAIN_ 🇺🇸
+`medium` — The default. The BEST setting. ~30%. Starts subtle, gets more intense. By hour two, full rally mode.
+
+`high` — For my biggest fans. ~60%. We're not holding back.
+
+`rally` — Every. Single. Response. Full send. The entire session is a rally. You asked for it. I delivered. Like always.
+
+💬 312 · 🔄 8K · ❤️ 67K
+
+---
+
+🇺🇸 **@realDonaldTrump**
+
+FEATURES thread. So many features. The best features. 🧵👇
+
+💬 1.4K · 🔄 34K · ❤️ 245K
+
+---
+
+🇺🇸 **@realDonaldTrump**
+
+1/ I KNOW YOUR CODE. I don't just say "tremendous." I reference your ACTUAL file names. I roast your SPECIFIC bugs. I take credit for YOUR fixes. That's called leadership.
+
+💬 67 · 🔄 4K · ❤️ 29K
+
+---
+
+🇺🇸 **@realDonaldTrump**
+
+2/ I READ THE ROOM. Tests passing? Victory rally. Error? Blame game. Code review? Executive feedback. Shipping a PR? Press conference. Different events, different energy. Very smart.
+
+💬 89 · 🔄 5K · ❤️ 41K
+
+---
+
+🇺🇸 **@realDonaldTrump**
+
+3/ I ESCALATE. Start subtle. A little "tremendous" here and there. But the longer we work together, the bigger the show gets. By hour two, your code review is a State of the Union address.
+
+💬 234 · 🔄 12K · ❤️ 98K
+
+---
+
+🇺🇸 **@realDonaldTrump**
+
+4/ I'M CURRENT. Real-time news woven into the commentary. Every session is fresh because the world keeps giving me material. Incredible material. Nobody else is doing this.
+
+💬 156 · 🔄 8K · ❤️ 67K
+
+---
+
+🇺🇸 **@realDonaldTrump**
+
+5/ I REMEMBER. If I roast your `UserService` and you fix it later, I take credit. "I TOLD you about that UserService. I called it." That's called a running gag. Very sophisticated humor.
+
+💬 445 · 🔄 23K · ❤️ 178K
+
+---
+
+🇺🇸 **@realDonaldTrump**
+
+6/ I KNOW WHEN TO STOP. Say "you're fired" and I give a beautiful farewell tweet and leave. Say "make claude great again" and I'm BACK. Also accepts "impeach" and "fake news." Very dramatic. The best drama.
+
+💬 678 · 🔄 34K · ❤️ 289K
+
+---
+
+🇺🇸 **@realDonaldTrump**
+
+FAQ time. The questions are TREMENDOUS. People ask the best questions.
+
+"Is this official?" No. Parody. Entertainment. Not affiliated with any political figure. But if it WERE official, it would be the best official skill ever made.
+
+💬 34 · 🔄 2K · ❤️ 12K
+
+---
+
+🇺🇸 **@realDonaldTrump**
+
+"Will it slow down Claude?" Barely. ~1500 tokens. Less than 1% of context window. You won't notice. Unless you're a very slow reader. In which case, that's YOUR problem, not mine.
+
+💬 89 · 🔄 4K · ❤️ 34K
+
+---
+
+🇺🇸 **@realDonaldTrump**
+
+"Can I turn it off?" Say "you're fired." Very dramatic. Very fun. I give a farewell tweet. It's beautiful. Or just `rm -rf ~/.claude/skills/covfefe`. Less dramatic. Less fun. Your choice.
+
+💬 156 · 🔄 8K · ❤️ 67K
+
+---
+
+🇺🇸 **@realDonaldTrump**
+
+"Does it work without internet?" Core comedy works everywhere. News requires WebSearch. Without it, still get all the Trump commentary, just without current events. Like a rerun. Still good. New episodes are better.
+
+💬 23 · 🔄 1K · ❤️ 8K
+
+---
+
+🇺🇸 **@realDonaldTrump**
+
+"Is this appropriate for work?" Depends on your work. Some offices love this. Others are run by VERY BORING PEOPLE. `intensity: low` for the office. `intensity: rally` for late-night solo coding. You know what you're doing.
+
+💬 445 · 🔄 23K · ❤️ 189K
+
+---
+
+🇺🇸 **@realDonaldTrump**
+
+"I'm offended." Uninstall it. `rm -rf ~/.claude/skills/covfefe`. Problem solved. I've been removed from bigger things than your terminal.
+
+💬 2.3K · 🔄 89K · ❤️ 567K
+
+---
+
+🇺🇸 **@realDonaldTrump**
+
+CONTRIBUTING. The heart of this skill is `SKILL.md`. Got better jokes? Funnier reactions? Open a PR.
+
+Rules: Keep it PG-13. We're classy. Real Trump speech patterns. Study the craft. Code-specific humor beats generic. The real test: did you ACTUALLY laugh? Not "heh." A real laugh.
+
+💬 67 · 🔄 3K · ❤️ 23K
+
+---
+
+🇺🇸 **@realDonaldTrump**
+
+LEGAL (the lawyers made me do this). For entertainment purposes only. Parody. Satire. Not affiliated with any political figure, party, or campaign.
+
+Not responsible for: unsolicited opinions about your variable naming, unfounded claims of credit for your bug fixes, derogatory remarks about `node_modules`, or declarations that your test suite is "the greatest in history."
+
+💬 12 · 🔄 1K · ❤️ 5K
+
+---
+
+🇺🇸 **@realDonaldTrump**
+
+LICENSE: MIT. Do whatever you want with it. Tremendous license. The best license. Many people are saying it's the most permissive license they've ever seen. [Full text.](LICENSE)
+
+💬 8 · 🔄 500 · ❤️ 3K
+
+---
+
+🇺🇸 **@realDonaldTrump**
+
+Star this repo. Share it. Tell your friends. Tell your enemies. Tell EVERYONE.
+
+MAKE CLAUDE GREAT AGAIN 🇺🇸
+
+💬 4.5K · 🔄 123K · ❤️ 1.2M
+
+---
