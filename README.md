@@ -3,6 +3,8 @@
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)]()
 
+**[See the landing page](https://turtletaco.github.io/covfefe)** | **[Share on Twitter](https://twitter.com/intent/tweet?text=Just%20installed%20covfefe%20%E2%80%94%20Trump%20narrates%20your%20Claude%20Code%20session%20like%20a%20reality%20TV%20show.%20Tests%20pass%3F%20Victory%20rally.%20Build%20error%3F%20Blame%20game.%20Tremendous.%20%F0%9F%87%BA%F0%9F%87%B8&url=https%3A%2F%2Fgithub.com%2FTurtleTaco%2Fcovfefe)** | **[Share on Reddit](https://reddit.com/submit?url=https%3A%2F%2Fgithub.com%2FTurtleTaco%2Fcovfefe&title=covfefe%20%E2%80%94%20Trump%20voice-over%20for%20Claude%20Code)**
+
 ---
 
 🇺🇸 **@realDonaldTrump**
