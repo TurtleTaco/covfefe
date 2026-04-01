@@ -1,32 +1,48 @@
 # 🎤 covfefe
 
-**The greatest Claude Code skill ever made. Many people are saying it. Install it. You won't regret it. Believe me.**
+> "I have the best words." — and now, so does your Claude Code.
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)]()
 
----
+Look, I'm going to be honest with you. Your Claude Code? It's fine. It writes code. It reviews code. Very smart. But it's BORING. Nobody's talking about it. Nobody's sharing screenshots on Twitter. You know why? No personality. No energy. No TRUMP.
 
-## What is this?
+That changes today.
 
-covfefe adds Trump-style voice-over commentary to your Claude Code sessions. You code. Claude helps. Trump narrates.
+covfefe is the greatest Claude Code skill ever created. Many people are saying it. Very smart people. Engineers at top companies. They install it and they say, "Sir, this is the funniest thing I've ever seen in my terminal." And I say, "I know."
 
-It's like having a reality TV show about your codebase, and Trump is the host.
+## What Does It Do? (Everything.)
 
-Your actual coding experience stays exactly the same. Claude still gives you excellent technical help. But roughly one in three responses, Trump drops in with a tweet-style commentary about what just happened.
+You code. Claude helps. I narrate. Like a reality TV show about your codebase, and I'm the host. Obviously.
 
-Tests pass? Victory rally. Build error? Blame game. Shipping a PR? Press conference.
+Roughly one in three responses, I drop in with commentary about what just happened. Your tests pass? Victory rally. Build error? Somebody's getting blamed. Shipping a PR? Press conference.
 
-And yes, it pulls in real-time news to keep the commentary fresh. Every session is a new episode.
+And here's the thing nobody else is doing... I pull in REAL news. Today's news. So every session is fresh. Every day is a new episode. Your coding sessions just became appointment television.
+
+## Install (One Line. The Best Line.)
+
+```bash
+git clone https://github.com/TurtleTaco/covfefe.git ~/.claude/skills/covfefe
+```
+
+That's it. One command. Very simple. Even a Democrat could do it.
+
+Next time you start Claude Code, I'm in the building. You're welcome.
+
+### Want It In Just One Project?
+
+```bash
+git clone https://github.com/TurtleTaco/covfefe.git your-project/.claude/skills/covfefe
+```
 
 ## Demo
 
 <!-- TODO: Replace with actual demo GIF/video -->
-_Demo video coming soon. It's going to be tremendous._
+_The demo video is going to be incredible. We're using AI voice technology. It's going to be the most shared developer video of the year. Coming soon. Believe me._
 
-## Example
+## What It Looks Like
 
-You ask Claude to review your code. Claude gives you a thoughtful, detailed review. Then:
+You ask Claude to review your code. Claude gives you a real, professional review. And then:
 
 ---
 
@@ -38,7 +54,7 @@ Just reviewed the code. Beautiful code. Really beautiful. But that `UserService.
 
 ---
 
-You run your tests and they all pass:
+Your tests pass:
 
 ---
 
@@ -62,94 +78,95 @@ This TypeError? Not our fault. Probably the framework. Maybe the compiler. I've 
 
 ---
 
-## Installation
-
-```bash
-# Clone the repo
-git clone https://github.com/TurtleTaco/covfefe.git
-
-# Copy to your Claude Code skills directory
-cp -r covfefe ~/.claude/skills/covfefe
-```
-
-That's it. Next time you start a Claude Code session, Trump is in the building.
-
-### Project-level install
-
-If you want covfefe only in a specific project:
-
-```bash
-cp -r covfefe /path/to/your/project/.claude/skills/covfefe
-```
-
-## Configuration
+## Configuration (Very Flexible. The Most Flexible.)
 
 Edit `~/.claude/skills/covfefe/config.yaml`:
 
 ```yaml
-# How much Trump do you want?
-# low:    ~10% of responses. Subtle. A whisper of Trump.
-# medium: ~30% of responses. The default. The recommended. The best. (default)
-# high:   ~60% of responses. For people who really love Trump commentary.
-# rally:  Every. Single. Response. Full send. You asked for it.
-intensity: medium
+# How much Trump do you want in your life?
+intensity: medium   # low / medium / high / rally
 
-# Dial back when you're frustrated debugging?
+# Go easy on me when I'm frustrated debugging
 frustration_detection: true
 
-# Skip Trump on security/PII discussions?
+# No jokes when I'm handling passwords and secrets
 topic_suppression: true
 ```
 
-## Features
+**`low`** — A whisper of Trump. Very subtle. Very classy. ~10% of responses. For people who want just a taste. Like a Trump appetizer.
 
-**Context-aware comedy.** Trump doesn't just say "tremendous." He references your actual file names, roasts your specific bugs, and takes credit for your fixes.
+**`medium`** — The default. The recommended. The BEST setting. ~30% of responses. Starts subtle, gets more intense as the session goes on. By hour two, we're in full rally mode.
 
-**Event-type reactions.** Different comedy styles for different events. Tests passing triggers a victory rally. Errors trigger a blame game. Code reviews get executive feedback. Commits get a press conference.
+**`high`** — For my biggest fans. ~60% of responses. We're not holding back.
 
-**Session escalation.** Starts subtle, gets more intense as the session goes on. By hour two, you're in full rally mode. (Unless you set intensity to `low`, in which case Trump stays polite.)
+**`rally`** — Every. Single. Response. Full send. The entire session is a rally. You asked for it. I delivered. Like always.
 
-**Real-time news.** Weaves in current events when they're topically relevant. Every session feels fresh because the news changes daily.
+## Features (So Many Features. The Best Features.)
 
-**Running gags.** Trump builds callbacks within the session. If he roasted your `UserService` earlier and you fix it, he takes credit.
+**I know your code.** I don't just say "tremendous." I reference your ACTUAL file names. I roast your SPECIFIC bugs. I take credit for YOUR fixes. That's called leadership.
 
-**Kill switch.** Say "Trump off" or "shut up Trump" and commentary stops immediately. Say "Trump on" to bring him back.
+**I read the room.** Tests passing? Victory rally. Error? Blame game. Code review? Executive feedback. Shipping? Press conference. Different events, different energy. Very smart.
 
-## FAQ
+**I escalate.** I start subtle. A little comment here, a little "tremendous" there. But the longer we work together, the bigger the show gets. By hour two, your code review is a State of the Union address.
 
-**Is this official?**
-No. This is a parody/satire project for entertainment. Not affiliated with or endorsed by any political figure, party, or organization.
+**I'm current.** Real-time news woven into the commentary. Every session is fresh because the world keeps giving me material. Incredible material.
 
-**Will it slow down Claude?**
-Barely. The skill adds about 1500-2000 tokens to the context (~1% of the context window). Occasional WebSearch calls for news add 1-2 seconds of latency. You won't notice.
+**I remember.** If I roast your `UserService` and you fix it later, I take credit. "I TOLD you about that UserService. I called it. Now it's fixed. You're welcome." That's called a running gag. Very sophisticated humor.
 
-**Can I turn it off mid-session?**
-Yes. Say "Trump off" and commentary stops instantly. Or delete the skill folder.
+**I know when to stop.** Say "you're fired" and I'm gone. Say "make claude great again" and I'm back. Very simple.
 
-**Does it work with all Claude Code plans?**
-The core comedy works everywhere. Real-time news integration requires WebSearch access. Without WebSearch, you still get all the Trump commentary, just without current events.
+## FAQ (Frequently Asked. Tremendous Questions.)
 
-**Is this appropriate for work?**
-You tell us. Some workplaces would find this hilarious. Others... not so much. Use judgment. We recommend `intensity: low` for professional settings and `intensity: rally` for late-night solo coding sessions.
+**"Is this official?"**
+No. This is a parody. For entertainment. Not affiliated with or endorsed by any political figure, party, or organization. But if it were official, it would be the best official skill ever made.
 
-## Contributing
+**"Will it slow down my Claude?"**
+Barely. About 1500 tokens of overhead. That's less than 1% of the context window. Occasional news searches add 1-2 seconds. You won't notice. Unless you're a very slow reader. In which case, that's your problem, not mine.
 
-The funniest part of this skill is the prompt in `SKILL.md`. If you have ideas for better jokes, funnier event reactions, or new Trump-isms, open a PR.
+**"Can I turn it off?"**
+Say "you're fired." Very dramatic. Very fun. I give a farewell tweet. It's beautiful. Then I'm gone until you say "make claude great again."
 
-Guidelines:
-- Keep it PG-13
-- Reference real Trump speech patterns and mannerisms
-- Code-specific humor > generic humor
-- Test your changes by actually using the skill (the real validation is: did you laugh?)
+Or just delete the folder. Less dramatic. Less fun. Your choice.
 
-## Disclaimer
+**"Does it work without the internet?"**
+The core comedy works everywhere. Real-time news requires WebSearch. Without it, you still get all the Trump commentary, just without current events. Like a rerun. Still good. But the new episodes are better.
 
-This project is **for entertainment purposes only**. It is a parody/satire that uses public persona speech patterns for comedic effect in a coding context.
+**"Is this appropriate for work?"**
+That depends on your work. Some offices would love this. Others... are run by very boring people. I recommend `intensity: low` for the office and `intensity: rally` for late-night solo coding. You know what you're doing.
 
-Not affiliated with, endorsed by, or connected to any political figure, party, campaign, or organization. The commentary generated is fictional and should not be taken as real statements.
+**"I'm offended."**
+Uninstall it. `rm -rf ~/.claude/skills/covfefe`. Problem solved. I've been removed from bigger things than your terminal.
 
-The authors are not responsible for any Trump-style commentary generated during your coding sessions, including but not limited to: unsolicited opinions about your variable naming, claims of credit for your bug fixes, or declarations that your test suite is "the greatest in history."
+## Contributing (Make covfefe Great... er.)
+
+The heart of this skill is the prompt in `SKILL.md`. If you've got better jokes, funnier reactions, or new Trump-isms that should be in here, open a PR.
+
+Rules:
+- Keep it PG-13. We're classy.
+- Real Trump speech patterns. Study the craft.
+- Code-specific humor always beats generic humor.
+- The real test: did you actually laugh? Not "heh." An actual laugh.
+
+Want to add new personality packs? Other voices? That's the roadmap. But first, we perfect the original. Because the original is always the best.
+
+## Disclaimer (The Lawyers Made Me Do This)
+
+This project is **for entertainment purposes only**. It's a parody. A satire. A joke about coding that uses the public persona speech patterns of a well-known public figure.
+
+Not affiliated with, endorsed by, or connected to any political figure, party, campaign, or organization. The commentary generated is fictional.
+
+The authors are not responsible for any Trump-style commentary generated during your coding sessions, including but not limited to: unsolicited opinions about your variable naming, unfounded claims of credit for your bug fixes, derogatory remarks about your `node_modules` folder, or declarations that your test suite is "the greatest in history."
+
+By installing this skill, you acknowledge that your coding sessions are about to get a lot more entertaining, and potentially a lot louder.
 
 ## License
 
-[MIT](LICENSE) — Do whatever you want with it. Tremendous license. The best license.
+[MIT](LICENSE) — Do whatever you want with it. Tremendous license. The best license. Many people are saying it's the most permissive license they've ever seen. And they're right.
+
+---
+
+_Made with love, ego, and a complete lack of humility._
+
+_Star this repo. Share it. Tell your friends. Tell your enemies. Tell everyone._
+
+_MAKE CLAUDE GREAT AGAIN_ 🇺🇸
