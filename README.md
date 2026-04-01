@@ -17,6 +17,17 @@ Tests pass? Victory rally. Build error? Somebody's getting blamed. Shipping a PR
 
 ## Install
 
+### For Humans
+
+Copy and paste this prompt to your AI coding agent (Claude Code, Cursor, etc.):
+
+```
+Install and configure covfefe by following the instructions here:
+https://raw.githubusercontent.com/TurtleTaco/covfefe/main/docs/install.md
+```
+
+### For Developers
+
 ```bash
 git clone https://github.com/TurtleTaco/covfefe.git ~/.claude/skills/covfefe
 ```
