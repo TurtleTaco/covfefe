@@ -1,4 +1,8 @@
-# 🎤 covfefe
+<p align="center">
+  <img src="maga-hat.svg" alt="MAKE CLAUDE GREAT AGAIN" width="340">
+</p>
+
+<h1 align="center">covfefe</h1>
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)]()

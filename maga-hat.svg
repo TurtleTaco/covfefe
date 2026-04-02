@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="60" viewBox="0 0 340 60">
+  <!-- Hat brim shadow -->
+  <ellipse cx="170" cy="50" rx="168" ry="10" fill="#6B0000"/>
+  <!-- Hat crown -->
+  <path d="M40,48 Q40,6 170,6 Q300,6 300,48 Z" fill="#BF0A30"/>
+  <!-- Hat brim -->
+  <ellipse cx="170" cy="48" rx="168" ry="10" fill="#A00828"/>
+  <!-- Text -->
+  <text x="170" y="36" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="14" letter-spacing="2.5" fill="white">MAKE CLAUDE GREAT AGAIN</text>
+</svg>
