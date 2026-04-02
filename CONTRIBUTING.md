@@ -29,7 +29,7 @@ The product is the prompt in `SKILL.md`. That's where the magic happens.
 
 - `config.yaml` structure (breaking change for users)
 - Kill switch phrases (users have muscle memory)
-- The core personality (Trump hyping code as reality TV)
+- The core personality (@realClaudeTrump posting about code)
 
 ## The Real Test
 

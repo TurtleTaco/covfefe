@@ -10,12 +10,12 @@ Submit after reaching star milestones. Do not submit prematurely.
 
 **Format:** Add a row to the "Individual Skills" table:
 ```
-| **[covfefe](https://github.com/TurtleTaco/covfefe)** | Trump voice-over commentary for Claude Code sessions. Comedy skill with 4 intensity levels, session report cards, and code-specific roasts. |
+| **[covfefe](https://github.com/TurtleTaco/covfefe)** | @realClaudeTrump — Claude J. Trump posts about your code. 4 intensity levels, session report cards, and code-specific roasts. |
 ```
 
 **Rules:**
 - One item per PR
-- PR title: "Add covfefe — Trump voice-over skill"
+- PR title: "Add covfefe — @realClaudeTrump for Claude Code"
 - Must NOT appear AI-generated
 - Must have clear docs, be functional, provide real value
 - No promotional content
@@ -37,7 +37,7 @@ Submit after reaching star milestones. Do not submit prematurely.
 - Category: Agent Skills > General
 
 **Suggested description:**
-> covfefe — Trump voice-over commentary for Claude Code. A SKILL.md file that adds Trump as your coding hype man with reality TV energy. 4 intensity levels, code-specific roasts, session report cards. Comedy skill, zero dependencies.
+> covfefe — @realClaudeTrump for Claude Code. Claude J. Trump posts about your code. 4 intensity levels, code-specific roasts, session report cards. Comedy skill, zero dependencies.
 
 ---
 

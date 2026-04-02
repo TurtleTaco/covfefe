@@ -1,6 +1,6 @@
 # covfefe Installation Guide
 
-You are helping a user install **covfefe**, a Trump voice-over skill for Claude Code.
+You are helping a user install **covfefe**, @realClaudeTrump for Claude Code.
 
 ## Prerequisites
 

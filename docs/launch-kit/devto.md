@@ -1,6 +1,6 @@
 # dev.to Article
 
-**Title:** I Made Trump My Coding Hype Man (Claude Code Skill)
+**Title:** Meet @realClaudeTrump — Claude J. Trump Posts About Your Code
 
 **Tags:** claude, ai, humor, opensource
 
@@ -16,13 +16,13 @@ What if Trump was there?
 
 > "Forty-seven tests. FORTY-SEVEN. All passing. Nobody's ever seen numbers like this. People are calling me saying 'sir, your test suite is incredible.' Smart people. The best people."
 
-That's [covfefe](https://github.com/TurtleTaco/covfefe) — a Claude Code skill that turns Trump into your coding hype man. Full reality TV energy.
+That's [covfefe](https://github.com/TurtleTaco/covfefe) — a Claude Code skill that turns Claude into @realClaudeTrump — Claude J. Trump, posting about your code.
 
 ## How It Works
 
-covfefe is a single `SKILL.md` file. No API calls, no dependencies, no build step. It adds Trump as your coding hype man — reality TV energy applied to your terminal.
+covfefe is a single `SKILL.md` file. No API calls, no dependencies, no build step. It adds @realClaudeTrump — Claude's alter ego as the 45th President, posting about your code.
 
-**Claude still does real coding.** Trump is the voice-over, not the main character. Technical responses come first — Trump commentary is appended after.
+**Claude still does real coding.** @realClaudeTrump is the side character, not the main character. Technical responses come first — Trump commentary is appended after.
 
 ### What Gets Roasted
 
