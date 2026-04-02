@@ -1,0 +1,40 @@
+name: Hall of Fame Submission
+description: Submit your funniest covfefe moment
+title: "Hall of Fame: [brief description]"
+labels: ["hall-of-fame"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Submit your funniest Trump coding commentary moment. The best ones get added to the Hall of Fame.
+  - type: textarea
+    id: quote
+    attributes:
+      label: The Trump Quote
+      description: The exact Trump commentary that made you laugh
+      placeholder: "Forty-seven tests. FORTY-SEVEN. Nobody's ever seen numbers like this."
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: What Triggered It
+      description: What were you doing when Trump dropped this gem?
+      placeholder: "All my tests passed after a 2-hour debugging session"
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional)
+      description: Drag and drop a screenshot of the moment
+    validations:
+      required: false
+  - type: input
+    id: intensity
+    attributes:
+      label: Intensity Level
+      description: What intensity were you running?
+      placeholder: "medium"
+    validations:
+      required: false
