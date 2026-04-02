@@ -38,7 +38,7 @@ https://raw.githubusercontent.com/TurtleTaco/covfefe/main/docs/install.md
 git clone https://github.com/TurtleTaco/covfefe.git ~/.claude/skills/covfefe
 ```
 
-One command. Next time you start Claude Code, I'm in the building.
+One command. Next time you start Claude Code, I'm in the Oval Office.
 
 Project-level only? `git clone https://github.com/TurtleTaco/covfefe.git your-project/.claude/skills/covfefe`
 
