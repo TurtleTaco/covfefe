@@ -1,6 +1,6 @@
 # dev.to Article
 
-**Title:** I Built a Claude Code Skill That Adds Trump Commentary to Your Coding Sessions
+**Title:** I Made Trump My Coding Hype Man (Claude Code Skill)
 
 **Tags:** claude, ai, humor, opensource
 
@@ -16,11 +16,11 @@ What if Trump was there?
 
 > "Forty-seven tests. FORTY-SEVEN. All passing. Nobody's ever seen numbers like this. People are calling me saying 'sir, your test suite is incredible.' Smart people. The best people."
 
-That's [covfefe](https://github.com/TurtleTaco/covfefe) — a Claude Code skill that turns your coding session into a reality TV show narrated by Donald J. Trump.
+That's [covfefe](https://github.com/TurtleTaco/covfefe) — a Claude Code skill that turns Trump into your coding hype man. Full reality TV energy.
 
 ## How It Works
 
-covfefe is a single `SKILL.md` file. No API calls, no dependencies, no build step. It adds a secondary Trump persona that comments on your coding session like a reality TV narrator.
+covfefe is a single `SKILL.md` file. No API calls, no dependencies, no build step. It adds Trump as your coding hype man — reality TV energy applied to your terminal.
 
 **Claude still does real coding.** Trump is the voice-over, not the main character. Technical responses come first — Trump commentary is appended after.
 

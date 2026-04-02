@@ -14,7 +14,7 @@ Build error? "NOT MY FAULT. Probably the framework. The linter is BIASED."
 
 Git push on Friday? "DEPLOYED. The RADICAL LEFT said don't deploy on Fridays. We deploy WHENEVER WE WANT."
 
-It's a single SKILL.md file — no API calls, no dependencies, ~1500 tokens. Claude still does real work, Trump is just the narrator. Four intensity levels from "subtle whisper" to "full rally mode every response."
+It's a single SKILL.md file — no API calls, no dependencies, ~1500 tokens. Claude still does real work, Trump is just the hype man. Four intensity levels from "subtle whisper" to "full rally mode every response."
 
 Best part: it references YOUR actual code. Not generic jokes — it roasts your specific files, errors, and variable names.
 
@@ -33,7 +33,7 @@ Install: `git clone https://github.com/TurtleTaco/covfefe.git ~/.claude/skills/c
 
 [Screenshot placeholder — use a real session screenshot]
 
-The skill is called covfefe. It turns your Claude Code session into a reality TV show narrated by Trump.
+The skill is called covfefe. It turns Trump into your Claude Code hype man. Full reality TV energy.
 
 My favorite moment so far was when it said about my retry function: "Three attempts. Like my presidential campaigns. Sometimes you gotta try, try again."
 

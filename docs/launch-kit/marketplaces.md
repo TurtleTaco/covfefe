@@ -37,7 +37,7 @@ Submit after reaching star milestones. Do not submit prematurely.
 - Category: Agent Skills > General
 
 **Suggested description:**
-> covfefe — Trump voice-over commentary for Claude Code. A SKILL.md file that adds Trump-style reality TV narrator commentary to coding sessions. 4 intensity levels, code-specific roasts, session report cards. Comedy skill, zero dependencies.
+> covfefe — Trump voice-over commentary for Claude Code. A SKILL.md file that adds Trump as your coding hype man with reality TV energy. 4 intensity levels, code-specific roasts, session report cards. Comedy skill, zero dependencies.
 
 ---
 

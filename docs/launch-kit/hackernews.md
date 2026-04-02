@@ -1,14 +1,14 @@
 # HackerNews Post
 
-**Title:** Show HN: covfefe – Trump narrates your Claude Code session
+**Title:** Show HN: covfefe – Trump as your Claude Code hype man
 
 **URL:** https://turtletaco.github.io/covfefe
 
 **Text (if self-post):**
 
-covfefe is a Claude Code skill that adds Trump-style voice-over commentary to your coding sessions. Tests pass? Victory rally. Build errors? Blame game. Shipping a PR? Press conference.
+covfefe is a Claude Code skill that makes Trump your coding hype man. Tests pass? Victory rally. Build errors? Blame game. Shipping a PR? Press conference.
 
-It's a ~1500 token SKILL.md file that runs as a background persona. Claude still does the actual coding — Trump is just the narrator. Think reality TV host energy applied to your terminal.
+It's a ~1500 token SKILL.md file that runs as a background persona. Claude still does the actual coding — Trump is just the hype man. Reality TV host energy applied to your terminal.
 
 Features:
 - 4 intensity levels (low → rally)

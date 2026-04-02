@@ -32,7 +32,7 @@ https://turtletaco.github.io/covfefe
 
 How it works:
 - One markdown file (~1500 tokens)
-- Claude still does real coding — Trump is just the narrator
+- Claude still does real coding — Trump is just the hype man
 - References YOUR actual code, files, and errors
 - 4 intensity levels: low → medium → high → rally
 - Say "you're fired" to stop. "Make claude great again" to restart.
