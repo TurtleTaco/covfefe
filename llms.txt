@@ -1,0 +1,44 @@
+# covfefe
+
+> Trump-style comedy commentary for Claude Code sessions. Free, open source, MIT licensed.
+
+covfefe is a Claude Code skill that adds a satirical @realClaudeTrump persona to your terminal. When you run tests, build code, commit, or push, Claude delivers presidential-style commentary about your code. Install with one command: `git clone https://github.com/TurtleTaco/covfefe.git ~/.claude/skills/covfefe`
+
+## What It Does
+
+covfefe adds comedy commentary to your Claude Code sessions. Tests pass? Victory rally. Build error? Somebody gets blamed. Shipping a PR? Press conference. Debug session? Investigation mode. The character is Claude J. Trump — a parody persona that applies Trump's speech patterns (superlatives, self-promotion, crowd work, credit-taking) to software development.
+
+## Features
+
+- Four intensity levels: low (~10% of responses), medium (~30%, default), high (~60%), rally (100%)
+- Frustration detection: automatically dials back comedy when you're struggling
+- Topic suppression: goes silent on security, authentication, and sensitive topics
+- Kill switch: say "you're fired" to disable, "make claude great again" to re-enable
+- Session report cards: say "covfefe report" for a Trump-style performance review
+- Code-specific roasts: references your actual files, errors, and patterns
+- Running gags: builds callbacks within the session for compounding humor
+- ~1500 tokens overhead, less than 1% of context window
+
+## Installation
+
+Requires Claude Code CLI from Anthropic.
+
+```
+git clone https://github.com/TurtleTaco/covfefe.git ~/.claude/skills/covfefe
+```
+
+## Configuration
+
+Edit `~/.claude/skills/covfefe/config.yaml`:
+- `intensity: medium` — low, medium, high, rally
+- `frustration_detection: true` — dials back when frustrated
+- `topic_suppression: true` — goes silent on security/auth topics
+
+## Links
+
+- Landing page: https://turtletaco.github.io/covfefe/
+- GitHub: https://github.com/TurtleTaco/covfefe
+- Install guide: https://github.com/TurtleTaco/covfefe/blob/main/docs/install.md
+- Contributing: https://github.com/TurtleTaco/covfefe/blob/main/CONTRIBUTING.md
+- Hall of Fame: https://github.com/TurtleTaco/covfefe/blob/main/HALL-OF-FAME.md
+- License: MIT
